@@ -1,0 +1,37 @@
+$primary_color : #2471a3 
+
+.row
+  display : flex
+  flex-wrap : wrap
+  grid-template-columns: 1fr
+.sidebar
+  flex : 20%
+  padding: 20px
+  text-align : center
+  background-color : $primary_color
+
+.sidebar
+  .profile
+    img
+      border-radius : 50%
+      
+.main
+  flex : 80%
+  padding: 20px
+  display: grid
+  grid-template-columns: 1fr 
+  gap: 16px
+  align-content: flex-start
+
+@media (min-width: 992px) 
+  .main 
+    flex : 80%
+    padding: 20px
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    gap: 2rem
+
+
+  
+
+
