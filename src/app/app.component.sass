@@ -1,4 +1,6 @@
-$primary_color : #2471a3 
+$primary_color : #2471a3
+$sidebar_link_color : #000
+$sidebar_link_hover_color : #fff 
 
 .row
   display : flex
@@ -8,13 +10,16 @@ $primary_color : #2471a3
   flex : 20%
   padding: 20px
   text-align : center
-  background-color : $primary_color
-
+  background-color : $primary_color  
 .sidebar
   .profile
     img
       border-radius : 50%
-      
+.sidebar
+  a
+    color: $sidebar_link_color
+    &:hover
+      color: $sidebar_link_hover_color         
 .main
   flex : 80%
   padding: 20px
