@@ -1,14 +1,8 @@
-$sidebar_primary_color : #2471a3
-$sidebar_link_color : #000
-$sidebar_link_hover_color : #fff
-$sidebar_profile_image_size : 175px
+@import "var.sass"
 
-.row
-  display : flex
-  flex-wrap : wrap
-  grid-template-columns: 1fr
+
 .sidebar
-  flex : 20%
+  display:flex
   padding: 20px
   text-align : center
   background-color : $sidebar_primary_color  
@@ -30,21 +24,28 @@ $sidebar_profile_image_size : 175px
     color: $sidebar_link_color
     &:hover
       color: $sidebar_link_hover_color         
+@media (min-width: 992px) 
+  .sidebar 
+    height : 100%
+
 .main
-  flex : 80%
   padding: 20px
   display: grid
   grid-template-columns: 1fr 
-  gap: 16px
-  align-content: flex-start
-
+  gap: 1rem
+  #align-items: center
+  #justify-content: center
+  #align-content: flex-start 
+  
 @media (min-width: 992px) 
   .main 
-    flex : 80%
+    height:100%
     padding: 20px
     display: grid
-    grid-template-columns: 1fr 1fr 1fr 1fr
-    gap: 2rem
+    grid-template-columns: 1fr 1fr 1fr 
+    gap: 0.5rem 
+    overflow-y: scroll
+
 
 
   
