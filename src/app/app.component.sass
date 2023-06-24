@@ -1,6 +1,7 @@
-$primary_color : #2471a3
+$sidebar_primary_color : #2471a3
 $sidebar_link_color : #000
-$sidebar_link_hover_color : #fff 
+$sidebar_link_hover_color : #fff
+$sidebar_profile_image_size : 175px
 
 .row
   display : flex
@@ -10,11 +11,20 @@ $sidebar_link_hover_color : #fff
   flex : 20%
   padding: 20px
   text-align : center
-  background-color : $primary_color  
+  background-color : $sidebar_primary_color  
 .sidebar
   .profile
     img
+      width : $sidebar_profile_image_size
       border-radius : 50%
+.sidebar
+  .profile
+    padding-bottom : 3em
+.sidebar
+  .profile
+    i
+      font-size : 1.2em
+      padding : 0.2em
 .sidebar
   a
     color: $sidebar_link_color

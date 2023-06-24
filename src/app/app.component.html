@@ -4,72 +4,31 @@
       <img src="https://media.licdn.com/dms/image/C4E03AQHJ3oHp8tkkTw/profile-displayphoto-shrink_800_800/0/1653938119503?e=1692230400&v=beta&t=-hsewEvdc9h4-6o81oJ8Ao60wwlj_p7hLx18O1C5q5E" class="img-thumbnail">
       <h2>Renan de Farias</h2>
       <p>Software Engineer</p>
+      <div>
+        <a><i class="bi bi-linkedin"></i></a>
+        <a><i class="bi bi-github"></i></a>
+        <a><i class="bi bi-instagram"></i></a>
+      </div>
     </div>
     <ul class="nav flex-column">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Active</a>
+        <a class="nav-link active" aria-current="page" href="#">About me</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Coding</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Cloud Architecture</a>
       </li>
         <li class="nav-item">
-        <a class="nav-link disabled">Disabled</a>
+          <!-- disabled-->
+        <a class="nav-link">Devops</a>
       </li>
     </ul>
   </div>
 
   <div class="main">
-
-    <div class="card">
-      <img src="https://www.sobrestauracao.org/upload/testimonial-1-150x150.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://www.sobrestauracao.org/upload/testimonial-1-150x150.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://www.sobrestauracao.org/upload/testimonial-1-150x150.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://www.sobrestauracao.org/upload/testimonial-1-150x150.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://www.sobrestauracao.org/upload/testimonial-1-150x150.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://www.sobrestauracao.org/upload/testimonial-1-150x150.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
+    <app-card [post]="post" *ngFor="let post of posts"></app-card>
     <router-outlet></router-outlet>
   </div>
 </div>
