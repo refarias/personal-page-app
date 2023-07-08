@@ -3,6 +3,7 @@ export class Post {
         public path : String,
         public coverImage : String,
         public title : String,
+        public shortDescription: String,
         public content : String,
         public date : Date,
         public visible : Boolean,

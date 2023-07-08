@@ -1,0 +1,24 @@
+<ul class="nav flex-column">
+    <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">About me</a>
+    </li>
+    
+
+    <div class="dropdown" *ngFor="let item of items">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+        {{item.name}}
+    </a>
+    <form class="dropdown-menu ">
+        <li class="nav-item dropdown" *ngFor="let child of item.children" >
+        <a class="nav-link" [ngClass]="{'dropdown-toggle': child.children}" href="{{child.path ? child.path : '#'}}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            {{child.name}}
+        </a>
+        <ul class="dropdown-menu" *ngIf="item.children">
+            <li>
+            <a class="dropdown-item" href="{{grandchildren.path ? grandchildren.path : '#'}}" *ngFor="let grandchildren of child.children">{{grandchildren.name}}</a>
+            </li>
+        </ul>
+        </li>
+    </form>
+    </div>
+</ul>

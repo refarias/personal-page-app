@@ -11,28 +11,8 @@
       </div>
     </div>
 
-    <ul class="nav flex-column">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">About me</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Coding</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Cloud Architecture</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Devops
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </li>
-    </ul>
+    <app-menu [items]="page.menu.items"></app-menu>
+
   </div>
   <div class="main col-lg-10 col-sm-12">
     <app-card [post]="post" *ngFor="let post of page.posts"></app-card>
